@@ -1,5 +1,4 @@
-package module1;
-
+package module3;
 import java.util.Scanner;
 public class MatrixMultiplication {
 

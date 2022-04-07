@@ -1,4 +1,5 @@
-package module2;
+package module3;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -13,8 +14,9 @@ public class EvenOddFile {
 			FileReader fin = new FileReader("oddeven.txt");
 			BufferedReader br = new BufferedReader(fin);
 			String inp = br.readLine();
-			FileWriter oddfr = new FileWriter("odd.txt");
-			FileWriter evenfr = new FileWriter("even.txt");
+			FileWriter oddfr = new FileWriter("odd2.txt");
+			FileWriter evenfr = new FileWriter("even2.txt");
+			System.out.println("inp= " + inp); 
 			for(String element: inp.split(" ")){
 				if(Integer.parseInt(element)%2==0) {
 					evenfr.write(element+" ");
